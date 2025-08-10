@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="description" content="Proyecto 991 – Página oficial del videojuego de supervivencia de SK Labs. Explora, sobrevive y apoya el desarrollo. Sin spoilers." />
+  <title>Proyecto 991 — SK Labs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" stroke="url(#g)" stroke-width="2" />
+          <path d="M20 42 L32 18 L44 42" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="64" y2="64">
+              <stop stop-color="#23d0a2"/><stop offset="1" stop-color="#7ee7ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Proyecto 991</span>
+        <span class="badge">SK Labs</span>
+      </div>
+      <nav>
+        <a href="#vision">Visión</a>
+        <a href="#juego">El Juego</a>
+        <a href="#galeria">Showcase</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="cta" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Apóyanos</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="content">
+      <h1 class="title reveal">Sobrevive. Explora. Recuerda.</h1>
+      <p class="subtitle reveal" style="transition-delay:.08s">Proyecto 991 es un juego de supervivencia cinematográfica en una isla remota. Nuestro foco: inmersión, sistemas profundos y una ejecución técnica impecable — sin spoilers de la historia.</p>
+      <div class="hero-buttons reveal" style="transition-delay:.16s">
+        <a class="btn cta" href="#juego">Ver Características</a>
+        <a class="btn btn-secondary" href="#vision">Nuestra Visión</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINTA TECNOLOGÍAS / CONFIANZA -->
+  <div class="ticker" role="presentation">
+    <div class="ticker-track">
+      <span>Hecho con pasión indie • Experiencia en Unity/Blender • QA y pruebas reales • Optimización para PC • SK Labs</span>
+      <span>Hecho con pasión indie • Experiencia en Unity/Blender • QA y pruebas reales • Optimización para PC • SK Labs</span>
+    </div>
+  </div>
+
+  <!-- VISIÓN -->
+  <section id="vision" class="container">
+    <h2 class="section-title reveal">Visión del Proyecto</h2>
+    <p class="section-sub reveal">Construimos una experiencia de supervivencia en tercera persona que prioriza la inmersión, el respeto por el tiempo del jugador y un acabado audiovisual pulido. Queremos que recuerdes la isla mucho después de apagar el juego — sin arruinarte la historia.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <div class="feature">
+          <div class="icon" aria-hidden="true">🧭</div>
+          <div>
+            <h4>Exploración Significativa</h4>
+            <p>Cada zona cuenta algo: pistas ambientales, biomas con identidad y secretos opcionales. Tu curiosidad es la brújula.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal" style="transition-delay:.05s">
+        <div class="feature">
+          <div class="icon" aria-hidden="true">🛠️</div>
+          <div>
+            <h4>Sistemas Profundos</h4>
+            <p>Crafting, construcción, trampas y clima dinámico. Capas jugables que se desbloquean de forma natural.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card reveal" style="transition-delay:.1s">
+        <div class="feature">
+          <div class="icon" aria-hidden="true">🎥</div>
+          <div>
+            <h4>Cine & Performance</h4>
+            <p>Estética low poly realista, cámara cuidada y sonido envolvente. Optimizado desde el primer prototipo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EL JUEGO / FEATURES EXPANDIDAS -->
+  <section id="juego" class="container">
+    <h2 class="section-title reveal">¿Qué Experiencia Buscamos?</h2>
+    <p class="section-sub reveal">Un survival moderno que no trate al jugador como un tutorial infinito. Aprendes jugando. Descubres a tu ritmo. Sin spoilers, solo dirección clara.</p>
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3>Supervivencia Intuitiva</h3>
+        <p>Recolección, hambre, clima y refugio con balance justo. Retador, no cruel.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.05s">
+        <h3>Construcción con Propósito</h3>
+        <p>Estructuras modulares y mejoras que impactan tu ruta y estrategias.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.1s">
+        <h3>Progresión Elegante</h3>
+        <p>Habilidades que amplían posibilidades sin romper la fantasía de supervivencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE / GALERÍA (Lugares conceptuales, sin spoilers) -->
+  <section id="galeria" class="container">
+    <h2 class="section-title reveal">Showcase Visual</h2>
+    <p class="section-sub reveal">Un vistazo a las sensaciones que perseguimos: luz, clima, materiales y composición. Imágenes de referencia/placeholder sin revelar contenido clave.</p>
+    <div class="showcase-grid">
+      <div class="shot reveal" aria-label="Bosque lluvioso, iluminación volumétrica">
+        <div class="overlay"></div>
+        <img alt="Bosque lluvioso" src="data:image/svg+xml;utf8,        <svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'>          <defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%230b0f14'/><stop offset='1' stop-color='%23121a24'/></linearGradient></defs>          <rect fill='url(%23g)' width='100%' height='100%'/>          <circle cx='500' cy='300' r='260' fill='rgba(35,208,162,0.12)'/>          <circle cx='1200' cy='650' r='220' fill='rgba(126,231,255,0.12)'/>        </svg>"/>
+        <span class="label">Luz & Clima</span>
+      </div>
+      <div class="shot reveal" aria-label="Costa rocosa con bruma">
+        <div class="overlay"></div>
+        <img alt="Costa" src="data:image/svg+xml;utf8,        <svg xmlns='http://www.w3.org/2000/svg' width='1600' height='900'>          <rect fill='%230f1722' width='100%' height='100%'/>          <rect y='600' width='100%' height='300' fill='%23121a24'/>          <rect y='500' width='100%' height='120' fill='rgba(126,231,255,0.18)'/>        </svg>"/>
+        <span class="label">Bruma Costera</span>
+      </div>
+      <div class="shot reveal" aria-label="Valle con estructuras low poly">
+        <div class="overlay"></div>
+        <img alt="Valle" src="data:image/svg+xml;utf8,        <svg xmlns='http://www.w3.org/2000/svg' width='2100' height='900'>          <rect fill='%230b0f14' width='100%' height='100%'/>          <polygon points='0,900 700,400 1400,900' fill='rgba(35,208,162,0.12)'/>          <polygon points='700,900 1400,500 2100,900' fill='rgba(126,231,255,0.12)'/>        </svg>"/>
+        <span class="label">Forma & Material</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP (sin fechas rígidas, enfoque en etapas) -->
+  <section id="roadmap" class="container">
+    <h2 class="section-title reveal">Roadmap</h2>
+    <p class="section-sub reveal">Etapas de desarrollo centradas en calidad y aprendizaje con la comunidad.</p>
+    <div class="roadmap">
+      <div class="milestone reveal">
+        <div class="card">
+          <h3>Vertical Slice</h3>
+          <p>Bloque central jugable con loop de supervivencia, una zona pulida y benchmark de rendimiento.</p>
+        </div>
+        <div style="display:grid; justify-items:center; align-content:center; gap:10px">
+          <div class="dot"></div>
+          <div class="card"><strong>Meta:</strong> sensaciones 1:1 con la visión.</div>
+        </div>
+      </div>
+      <div class="milestone reveal">
+        <div style="display:grid; justify-items:center; align-content:center; gap:10px">
+          <div class="dot"></div>
+          <div class="card"><strong>Meta:</strong> estabilidad + telemetría.</div>
+        </div>
+        <div class="card">
+          <h3>Alpha Cerrada</h3>
+          <p>Pruebas con comunidad pequeña. Balance, UI/UX y accesibilidad.</p>
+        </div>
+      </div>
+      <div class="milestone reveal">
+        <div class="card">
+          <h3>Beta Abierta</h3>
+          <p>Compatibilidad de hardware, pulido audiovisual y QA ampliado.</p>
+        </div>
+        <div style="display:grid; justify-items:center; align-content:center; gap:10px">
+          <div class="dot"></div>
+          <div class="card"><strong>Meta:</strong> performance + estabilidad.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO / SOBRE SK LABS -->
+  <section id="equipo" class="container">
+    <h2 class="section-title reveal">SK Labs — El Estudio</h2>
+    <p class="section-sub reveal">Somos un estudio independiente con enfoque técnico y obsesión por el detalle. Creemos en prototipar rápido, escuchar a la comunidad y lanzar con la mayor calidad posible.</p>
+    <div class="team-grid">
+      <div class="member reveal">
+        <div class="avatar" aria-hidden="true"></div>
+        <h4>Dirección Creativa</h4>
+        <div class="role">Game Design & Producción</div>
+      </div>
+      <div class="member reveal" style="transition-delay:.05s">
+        <div class="avatar" aria-hidden="true"></div>
+        <h4>Programación</h4>
+        <div class="role">Gameplay, Sistemas & Tools</div>
+      </div>
+      <div class="member reveal" style="transition-delay:.1s">
+        <div class="avatar" aria-hidden="true"></div>
+        <h4>Arte & Técnica</h4>
+        <div class="role">Modelado, Shaders & Lighting</div>
+      </div>
+      <div class="member reveal" style="transition-delay:.15s">
+        <div class="avatar" aria-hidden="true"></div>
+        <h4>Audio</h4>
+        <div class="role">Música, Sonido & Integración</div>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:18px">
+      <strong>Valores:</strong> transparencia, comunicación clara, y amor por construir experiencias que signifiquen algo para los jugadores.
+    </div>
+  </section>
+
+  <!-- CTA / CONTACTO -->
+  <section id="contacto" class="container">
+    <div class="cta-panel">
+      <div class="card reveal">
+        <h2>¿Te sumas al viaje?</h2>
+        <p class="section-sub">Déjanos tu correo para recibir novedades de desarrollo, pruebas y la futura campaña. Sin spam, lo prometemos.</p>
+        <form onsubmit="event.preventDefault(); subscribe();">
+          <input id="email" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required />
+          <textarea id="msg" rows="3" placeholder="Mensaje (opcional)" aria-label="Mensaje opcional"></textarea>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <button class="cta" type="submit">Quiero Recibir Novedades</button>
+            <a class="btn btn-secondary" href="#inicio">Volver arriba</a>
+          </div>
+          <div id="form-status" class="section-sub" style="display:none; margin-top:8px"></div>
+        </form>
+      </div>
+      <div class="card reveal" style="min-height: 220px; display:grid; align-content:start; gap:10px">
+        <h3>Contacto Directo</h3>
+        <p>¿Prensa, colaboración o preguntas? Escríbenos.</p>
+        <p><strong>Email:</strong> <a href="mailto:contacto@sklabs.dev">contacto@sklabs.dev</a></p>
+        <p><strong>Redes:</strong> <a href="#">Twitter/X</a> · <a href="#">Instagram</a> · <a href="#">YouTube</a> · <a href="#">Itch</a></p>
+        <p class="section-sub">*Canales de ejemplo. Actualiza con tus enlaces reales.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap">
+      <div>© <span id="year"></span> SK Labs — Proyecto 991. Todos los derechos reservados.</div>
+      <div>Hecho con ♥ por SK Labs</div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN TEMA -->
+  <div class="theme-toggle">
+    <button id="toggleTheme" aria-label="Cambiar tema">Alternar tema</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
