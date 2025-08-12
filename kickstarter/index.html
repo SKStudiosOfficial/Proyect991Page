@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f14" />
+  <title>Proyecto 991 — Kickstarter</title>
+
+  <meta name="description" content="Apoya el Kickstarter de Proyecto 991: un survival cinematográfico con exploración significativa, sistemas profundos y un acabado técnico pulido." />
+  <link rel="canonical" href="https://proyect991.com/kickstarter/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Proyecto 991 — Kickstarter" />
+  <meta property="og:description" content="Haz que Proyecto 991 sea posible. Recompensas, metas y roadmap transparentes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og/og-kickstarter.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <button id="menuToggle" class="hamburger" aria-label="Abrir menú" aria-controls="siteNav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <circle cx="32" cy="32" r="28" stroke="url(#g)" stroke-width="2" />
+          <path d="M20 42 L32 18 L44 42" stroke="url(#g)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="64" y2="64">
+              <stop stop-color="#23d0a2"/><stop offset="1" stop-color="#7ee7ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Proyecto 991</span>
+        <span class="badge">Kickstarter</span>
+      </div>
+
+      <nav id="siteNav">
+        <a href="/">Home</a>
+        <a href="/#vision">Visión</a>
+        <a href="/#juego">El Juego</a>
+        <a href="/#galeria">Showcase</a>
+        <a href="/#roadmap">Roadmap</a>
+        <a href="/#equipo">Equipo</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="cta hide-on-mobile" href="#apoyar">Apoyar</a>
+    </div>
+  </header>
+
+  <!-- HERO KS -->
+  <section class="hero" id="inicio">
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="content">
+      <h1 class="title reveal">Hagámoslo posible</h1>
+      <p class="subtitle reveal" style="transition-delay:.08s">
+        Tu apoyo en Kickstarter nos permite terminar el vertical slice con la calidad que merece.
+        Transparencia total: metas claras, roadmap público y builds de prueba.
+      </p>
+      <div class="hero-buttons reveal" style="transition-delay:.16s">
+        <!-- Reemplaza el # por la URL real de Kickstarter cuando la tengas -->
+        <a class="btn cta" href="#" aria-label="Ir a la campaña de Kickstarter">Ir a Kickstarter</a>
+        <a class="btn btn-secondary" href="#recompensas">Ver Recompensas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTRICAS / PROGRESO -->
+  <section class="container" id="apoyar">
+    <h2 class="section-title reveal">Meta de financiación</h2>
+    <p class="section-sub reveal">Mostramos el progreso en tiempo real cuando la campaña esté activa.</p>
+
+    <div class="card reveal" style="display:grid; gap:14px">
+      <div style="display:flex; justify-content:space-between; align-items:end; gap:12px; flex-wrap:wrap">
+        <div>
+          <div style="font-size:28px; font-weight:800">$0 / $50.000</div>
+          <div class="section-sub">0 patrocinadores · 0 días restantes</div>
+        </div>
+        <a class="btn cta" href="#" aria-label="Apoyar en Kickstarter">Apoyar ahora</a>
+      </div>
+      <div style="height:12px; background:rgba(255,255,255,.08); border-radius:999px; overflow:hidden; border:1px solid rgba(255,255,255,.1)">
+        <div style="height:100%; width:0%; background:linear-gradient(90deg, var(--accent), var(--accent-2));"></div>
+      </div>
+      <div class="section-sub">*Valores placeholder hasta enlazar con Kickstarter/API.</div>
+    </div>
+  </section>
+
+  <!-- RECOMPENSAS -->
+  <section class="container" id="recompensas">
+    <h2 class="section-title reveal">Recompensas</h2>
+    <p class="section-sub reveal">Pensadas para agradecer sin hipotecar el desarrollo.</p>
+
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3>Explorador</h3>
+        <p class="section-sub">Copia digital del juego + tu nombre en créditos.</p>
+        <strong>$25</strong>
+      </div>
+      <div class="card reveal" style="transition-delay:.05s">
+        <h3>Cartógrafo</h3>
+        <p class="section-sub">Todo lo anterior + OST digital + fondo de pantalla exclusivo.</p>
+        <strong>$45</strong>
+      </div>
+      <div class="card reveal" style="transition-delay:.1s">
+        <h3>Arquitecto</h3>
+        <p class="section-sub">Todo lo anterior + acceso a Beta + artbook digital.</p>
+        <strong>$75</strong>
+      </div>
+      <div class="card reveal" style="transition-delay:.15s">
+        <h3>Vigilante</h3>
+        <p class="section-sub">Todo lo anterior + crédito “Supporter” destacado + canal privado en Discord.</p>
+        <strong>$120</strong>
+      </div>
+      <div class="card reveal" style="transition-delay:.2s">
+        <h3>Conservador</h3>
+        <p class="section-sub">Todo lo anterior + nombre en un monumento in-game (límite).</p>
+        <strong>$250</strong>
+      </div>
+      <div class="card reveal" style="transition-delay:.25s">
+        <h3>Patrono</h3>
+        <p class="section-sub">Todo lo anterior + NPC con tu nombre (aprobación de lore).</p>
+        <strong>$500</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRETCH GOALS -->
+  <section class="container" id="metas">
+    <h2 class="section-title reveal">Metas ampliadas</h2>
+    <div class="roadmap">
+      <div class="milestone reveal">
+        <div class="card">
+          <h3>$60k — Bioma costero ampliado</h3>
+          <p>Nuevas zonas, clima y composiciones únicas.</p>
+        </div>
+        <div class="center-stack">
+          <div class="dot"></div>
+          <div class="card"><strong>Impacto:</strong> variedad de exploración.</div>
+        </div>
+      </div>
+      <div class="milestone reveal">
+        <div class="center-stack">
+          <div class="dot"></div>
+          <div class="card"><strong>Impacto:</strong> rejugabilidad.</div>
+        </div>
+        <div class="card">
+          <h3>$75k — Sistema de eventos dinámicos</h3>
+          <p>Encuentros y fenómenos que alteran rutas y decisiones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container" id="faq">
+    <h2 class="section-title reveal">Preguntas frecuentes</h2>
+    <div class="grid-3">
+      <div class="card reveal">
+        <h3>¿Plataformas?</h3>
+        <p class="section-sub">PC (Windows). Exploramos otras según metas y performance.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.05s">
+        <h3>¿Fecha estimada?</h3>
+        <p class="section-sub">Anunciamos fecha al completar el vertical slice + pruebas.</p>
+      </div>
+      <div class="card reveal" style="transition-delay:.1s">
+        <h3>¿Habrá demo?</h3>
+        <p class="section-sub">Sí, una vez estable el slice para feedback real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="container" id="suscripcion">
+    <div class="cta-panel">
+      <div class="card reveal">
+        <h2>¿Quieres enterarte primero?</h2>
+        <p class="section-sub">Suscríbete para recibir la fecha y el enlace del Kickstarter.</p>
+        <form onsubmit="event.preventDefault(); subscribe();">
+          <input id="email" type="email" placeholder="tu@email.com" aria-label="Correo electrónico" required />
+          <textarea id="msg" rows="3" placeholder="Mensaje (opcional)" aria-label="Mensaje opcional"></textarea>
+          <div class="btn-row">
+            <button class="cta" type="submit">Avisarme</button>
+            <a class="btn btn-secondary" href="/">Volver a la Home</a>
+          </div>
+          <div id="form-status" class="section-sub" style="display:none; margin-top:8px"></div>
+        </form>
+      </div>
+      <div class="card reveal contact-card">
+        <h3>Contacto</h3>
+        <p>¿Prensa o dudas sobre la campaña? Escríbenos.</p>
+        <p><strong>Email:</strong> <a href="mailto:contacto@sklabs.dev">contacto@sklabs.dev</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> SK Labs — Proyecto 991.</div>
+      <div class="footer-actions">
+        <button id="toggleTheme" aria-label="Cambiar tema" class="btn btn-secondary small">Alternar tema</button>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="/app.js"></script>
+</body>
+</html>
